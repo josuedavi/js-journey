@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body >
+<h1 id="color">After 5 seconds, Changed My Color With Javascript Input: </h1>
+
+
+<script>
+function ChangeColor(newColor)
+{
+var elem = document.getElementById('color');
+elem.style.color = newColor;
+
+}
+
+condition = false // global
+seconds = 0 // global
+
+//runs function after 5 seconds have passed, then clears timer, and runs following code.
+//Afterwards lets user change text color with a prompt
+var timer = setInterval(function() {
+if ( seconds > 4) {
+    clearInterval(timer)
+
+    var Color = prompt("Input A Color, The Color You Input Will Change The Color Of The Text.");
+    ChangeColor(Color);
+}
+seconds+=1;
+}, 1000);
+
+
+
+</script>
+
+</body>
+</html>

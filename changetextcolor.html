@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="color">Change My Color With Javascript (Click The Buttons)</h1>
+<button onclick=ChangeColor('red')>Click To Turn Red</button>
+<button onclick=ChangeColor('black')>Click To Turn Back</button>
+
+<script>
+function ChangeColor(newColor)
+{
+var elem = document.getElementById('color');
+elem.style.color = newColor;
+
+}
+</script>
+
+</body>
+</html>
